@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aun Shoes Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f4f1ea;
+      color: #1a1a1a;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .logo img {
+      height: 60px;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d72638;
+    }
+    .hero {
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1603808033192-082d6919d3de') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+    .hero h1 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin: 40px;
+      text-align: center;
+      color: #d72638;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+    }
+    .product {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transform: scale(1);
+      transition: transform 0.3s;
+      animation: fadeInUp 1s ease;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .product-info h3 {
+      margin: 10px 0;
+    }
+    .product-info p {
+      color: #555;
+    }
+    .product-info a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #d72638;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .product-info a:hover {
+      background: #a31b2c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fff;
+      font-size: 0.9em;
+      border-top: 1px solid #ddd;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Aun Logo" />
+  </div>
+  <nav>
+    <a href="#adidas">Adidas</a>
+    <a href="#nike">Nike</a>
+    <a href="#leveis">Leveis</a>
+    <a href="#jordans">Jordans</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Step Boldly with Aun – Where Design Meets Comfort</h1>
+</section>
+
+<section id="adidas">
+  <h2 class="section-title">Adidas</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519744346364-b76217c5f7a5" alt="Adidas 1">
+      <div class="product-info">
+        <h3>Adidas Run Swift</h3>
+        <p>PKR 6,500</p>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nike">
+  <h2 class="section-title">Nike</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1519861399459-c1cbd1e3033b" alt="Nike 1">
+      <div class="product-info">
+        <h3>Nike Air Max</h3>
+        <p>PKR 9,000</p>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leveis">
+  <h2 class="section-title">Leveis</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1584735175121-7a9825f4a0e0" alt="Leveis 1">
+      <div class="product-info">
+        <h3>Leveis Classic Boot</h3>
+        <p>PKR 5,800</p>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jordans">
+  <h2 class="section-title">Jordans</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1571731956672-64336f4f46c1" alt="Jordans 1">
+      <div class="product-info">
+        <h3>Air Jordan Retro</h3>
+        <p>PKR 12,000</p>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Aun Shoes (عون) – All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
